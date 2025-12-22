@@ -4,25 +4,25 @@ import "./Projects.css";
 
 const projects = [
   {
-    title: "Real-Time Air Quality Hotspot Detection",
+    title: "Real-Time Air Quality Hotspot Detection and Multi-Sensor Analytics",
     description:
-      "Analyzes real-time air quality data from Breeze sensors to identify pollution hotspots.",
+      "This project analyzes real-time air quality data collected from Breeze Technologies sensors deployed across Virginia Beach.",
     tech: ["Python", "Pandas", "Scikit-learn", "LSTM"],
     github:
       "https://github.com/Ken2745/Real-Time-Air-Quality-Hotspot-Detection-and-Multi-Sensor-Analytics",
   },
   {
-    title: "Safety and Response App",
+    title: "The Coupon App (Safety & Emergency Response Mobile App)",
     description:
       "A safety-focused mobile application designed to assist users during emergencies.",
-    tech: ["React", "Firebase", "Node.js"],
-    github: "https://github.com/yourusername/safety-app",
+    tech: ["Java", "Android SDK", "Retrofit", "TensorFlow Lite", "Porcupine", "Django", "SQLite", "REST APIs", "Docker", "GitLab CI/CD"],
+    github: "https://github.com/Ken2745/the-coupon-app",
   },
   {
     title: "Strava Performance Analytics",
     description:
       "End-to-end data pipeline and analytics platform using the Strava API.",
-    tech: ["Python", "ETL", "EDA", "Visualization"],
+      tech: ["Python", "Strava API", "Pandas", "NumPy", "scikit-learn", "SQL", "PostgresSql", "Power BI"],
     github: "https://github.com/Ken2745/Strava-Performance-Analytics",
   },
   {
@@ -33,11 +33,18 @@ const projects = [
     github: "https://github.com/Ken2745/AI_Grammar_Scoring_Engine",
   },
   {
-    title: "Personal Portfolio Website",
+    title: "Diabetes Risk Classification System",
     description:
-      "Modern portfolio built with React, Tailwind, and Framer Motion.",
-    tech: ["React", "Tailwind", "Vite", "Framer Motion"],
-    github: "https://github.com/yourusername/portfolio",
+      "This project develops supervised machine learning models to predict the likelihood of diabetes among adults in the United States.",
+    tech: ["Python", "Pandas", "NumPy", "scikit-learn", "CatBoost","Logistic Regression", "Random Forest"],
+    github: "https://github.com/Ken2745/Diabetes-Detection",
+  },
+    {
+    title: "Air Quality Prediction",
+    description:
+      "This project aims to analyze air pollution trends in urban areas, focusing specifically on New York City, and develop a predictive models to forecast future pollution levels.",
+    tech: ["Python", "Pandas", "NumPy", "scikit-learn", "ARIMA", "Time-Series Forecasting"],
+    github: "https://github.com/Ken2745/-Analyzing-Pollution-and-Air-Quality-Trends",
   },
 ];
 

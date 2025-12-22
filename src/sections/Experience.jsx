@@ -5,34 +5,27 @@ import "./Experience.css";
 
 const experiences = [
   {
-    role: "AI / ML Engineer",
-    company: "Freelance / Independent",
-    date: "2024 – Present",
+    role: "Data Science Intern",
+    company: "City of Virginia Beach – Department of Information Technology",
+    date: "May 2025 – August 2025",
     description: [
-      "Developed AI-driven applications using Python, TensorFlow, and PyTorch.",
-      "Built ML pipelines for data preprocessing, model training, and evaluation.",
-      "Applied LSTM and ARIMA models for time-series forecasting projects.",
+      "Designed and implemented a real-time environmental data analytics pipeline using Python and the Breeze Technologies API, ingesting and processing 1.2M+ multivariate time-series sensor records across multiple monitoring locations.",
+      "Performed exploratory and time-series analysis to identify air quality trends, anomalies, and high-risk conditions supporting environmental monitoring, early flood detection, and emergency preparedness.",
+      "Produced weekly analytical reports and presentations translating complex technical findings into actionable insights for city leadership and operational teams.",
     ],
   },
   {
-    role: "Data Science Graduate Student",
-    company: "Old Dominion University",
-    date: "2024 – Present",
+    role: "Software Engineering Intern",
+    company: "MAG Aerospace",
+    date: "June 2023 – August 2023",
     description: [
-      "Focused on machine learning, big data analytics, and AI systems.",
-      "Completed projects in air quality prediction and crash fatality analysis.",
-    ],
-  },
-  {
-    role: "Full Stack Developer",
-    company: "Academic & Personal Projects",
-    date: "2022 – 2024",
-    description: [
-      "Built full-stack applications using React, Node.js, and SQL.",
-      "Designed REST APIs and deployed containerized apps with Docker.",
+      "Contributed to defense imaging and simulation pipelines by capturing and processing high-fidelity infrared and multi-camera datasets for 3D virtual reality combat training systems.",
+      "Operated and coordinated multi-system imaging stations, ensuring accurate synchronization, data integrity, and repeatable capture workflows across controlled test environments.",
+      "Supported end-to-end data workflows from image acquisition and preprocessing to engineering handoff, improving dataset usability for immersive training applications.",
     ],
   },
 ];
+
 
 export default function Experience() {
   return (

@@ -7,10 +7,9 @@ export default function About() {
   return (
     <Section title="About Me">
       <p className="about-subtitle">
-        Passionate AI/ML Engineer and Full Stack Developer with expertise in
-        building intelligent systems and scalable web applications. Currently
-        pursuing Computer Science Engineering with a focus on cutting-edge
-        technologies.
+        Passionate Software Engineer with hands-on experience in data science, artificial intelligence, and machine learning.
+        Currently pursuing a Master’s degree in Data Science and Analytics with a concentration in Engineering and Big Data Analytics, 
+         
       </p>
 
       <div className="about-grid">

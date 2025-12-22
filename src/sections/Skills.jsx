@@ -8,70 +8,73 @@ const categories = {
   languages: {
   label: "Programming Languages",
   skills: [
-    { name: "Python", level: 95, projects: 60, desc: "AI, ML, backend & scripting" },
-    { name: "JavaScript", level: 92, projects: 55, desc: "Frontend & backend development" },
-    { name: "TypeScript", level: 88, projects: 35, desc: "Type-safe JavaScript" },
-    { name: "SQL", level: 90, projects: 40, desc: "Relational databases & analytics" },
-    { name: "Java", level: 80, projects: 20, desc: "Object-oriented programming" },
-    { name: "C++", level: 75, projects: 15, desc: "Systems & performance-focused code" },
+    { name: "Python", level: 95, desc: "AI, ML, backend & scripting" },
+    { name: "JavaScript", level: 85, desc: "Frontend & backend development" },
+    { name: "TypeScript", level: 80, desc: "Type-safe JavaScript" },
+    { name: "SQL", level: 95, desc: "Relational databases & analytics" },
+    { name: "Java", level: 95, desc: "Object-oriented programming" },
+    { name: "C++", level: 90, desc: "Systems & performance-focused code" },
   ],
 },
 
   ai: {
     label: "AI & Machine Learning",
     skills: [
-      { name: "Python", level: 95, projects: 50, desc: "Primary language for AI/ML development" },
-      { name: "TensorFlow", level: 90, projects: 25, desc: "Deep learning framework" },
-      { name: "PyTorch", level: 88, projects: 20, desc: "Research-focused ML framework" },
-      { name: "Hugging Face", level: 92, projects: 30, desc: "NLP & transformer models" },
-      { name: "LangChain", level: 85, projects: 15, desc: "LLM application framework" },
-      { name: "OpenAI API", level: 90, projects: 35, desc: "GPT integration & fine-tuning" },
+      { name: "TensorFlow", level: 80, desc: "Deep learning framework" },
+      { name: "PyTorch", level: 80, desc: "Research-focused ML framework" },
+      { name: "Pandas", level: 90, desc: "Data manipulation & analysis" },
+      { name: "NumPy", level: 90, desc: "Numerical computing & vectorized operations" },
+      { name: "scikit-learn", level: 85, desc: "Classical machine learning algorithms" },
+      { name: "Logistic Regression", level: 85, desc: "Supervised classification modeling" },
+      { name: "Random Forest", level: 85, desc: "Ensemble learning & feature importance" },,
+      { name: "Matplotlib", level: 90, desc: "Data visualization & exploratory analysis" },
+      { name: "Seaborn", level: 90, desc: "Statistical data visualization" },
     ],
   },
   frontend: {
     label: "Frontend",
     skills: [
-      { name: "React", level: 95, projects: 45, desc: "Component-based UI library" },
-      { name: "Next.js", level: 92, projects: 40, desc: "Full-stack React framework" },
-      { name: "TypeScript", level: 88, projects: 35, desc: "Type-safe JavaScript" },
-      { name: "Tailwind CSS", level: 90, projects: 30, desc: "Utility-first CSS framework" },
-      { name: "Framer Motion", level: 85, projects: 25, desc: "Animation library" },
-      { name: "Three.js", level: 75, projects: 10, desc: "3D graphics library" },
+      { name: "HTML & CSS", level: 90, desc: "Semantic markup & responsive design" },
+      { name: "React.js", level: 85, desc: "Component-based UI library" },
+      { name: "TypeScript", level: 70, desc: "Type-safe JavaScript development" },
+      { name: "Tailwind CSS", level: 70, desc: "Utility-first CSS framework" },
+      { name: "Framer Motion", level: 70, desc: "Animation library" },
     ],
   },
 backend: {
   label: "Backend & APIs",
   skills: [
-    { name: "Node.js", level: 90, projects: 40, desc: "JavaScript runtime for scalable backends" },
-    { name: "Express.js", level: 88, projects: 35, desc: "Minimalist REST API framework" },
-    { name: "Django", level: 85, projects: 25, desc: "High-level Python web framework" },
-    { name: "FastAPI", level: 92, projects: 30, desc: "High-performance Python APIs" },
-    { name: "REST APIs", level: 95, projects: 45, desc: "API design & integration" },
-    { name: "GraphQL", level: 80, projects: 15, desc: "Flexible query-based APIs" },
+    { name: "Node.js", level: 85, desc: "JavaScript runtime for scalable backends" },
+    { name: "Express.js", level: 70, desc: "Minimalist REST API framework" },
+    { name: "Django", level: 80, desc: "High-level Python web framework" },
+    { name: "REST APIs", level: 90, desc: "API design & integration" },
+    { name: "GraphQL", level: 70, desc: "Flexible query-based APIs" },
   ],
 },
 
-tools: {
-  label: "Development Tools",
-  skills: [
-    { name: "Git & GitHub", level: 95, projects: 60, desc: "Version control & collaboration" },
-    { name: "VS Code", level: 98, projects: 70, desc: "Primary development environment" },
-    { name: "Postman", level: 90, projects: 35, desc: "API testing & documentation" },
-    { name: "Docker Desktop", level: 85, projects: 30, desc: "Local container management" },
-    { name: "Jupyter Notebook", level: 92, projects: 45, desc: "Data science & experimentation" },
-    { name: "Power BI", level: 80, projects: 20, desc: "Data visualization & dashboards" },
-  ],
-},
+  databases: {
+    label: "Databases & Data Tools",
+    skills: [
+      { name: "MySQL", level: 85, desc: "Relational database management" },
+      { name: "PostgreSQL", level: 90, desc: "Advanced SQL & analytics queries" },
+      { name: "MongoDB", level: 80, desc: "NoSQL document database" },
+      { name: "Databricks", level: 80, desc: "Big data processing & analytics" },
+      { name: "Jupyter Notebook", level: 95, desc: "Data analysis & experimentation" },
+      { name: "Excel", level: 95, desc: "Data analysis & reporting" },
+      { name: "Tableau", level: 85, desc: "Interactive data visualization" },
+      { name: "Power BI", level: 85, desc: "Dashboards & business insights" },
+    ],
+  },
 
 cloud: {
   label: "Cloud & DevOps",
   skills: [
-    { name: "AWS", level: 85, projects: 20, desc: "Cloud infrastructure & services" },
-    { name: "Docker", level: 90, projects: 35, desc: "Containerized applications" },
-    { name: "GitHub Actions", level: 80, projects: 25, desc: "CI/CD automation pipelines" },
-    { name: "Linux", level: 88, projects: 40, desc: "Server & environment management" },
-    { name: "Nginx", level: 75, projects: 15, desc: "Reverse proxy & web server" },
-    { name: "Vercel", level: 92, projects: 30, desc: "Frontend deployment platform" },
+    { name: "AWS", level: 70, desc: "Cloud infrastructure & services" },
+     { name: "Azure", level: 70, desc: "Cloud infrastructure & services" },
+    { name: "Docker", level: 70, desc: "Containerized applications" },
+    { name: "Linux", level: 75, desc: "Server & environment management" },
+    { name: "Git & GitHub", level: 90, desc: "Version control & collaboration" },
+    { name: "VS Code", level: 95, desc: "Primary development environment" },
   ],
 },
 
@@ -83,7 +86,7 @@ export default function Skills() {
   return (
     <Section id="skills" title="Technical Stack">
       <p className="skills-subtitle">
-        Technologies and tools I use to build innovative solutions
+        
       </p>
 
       {/* Category Tabs */}
@@ -113,7 +116,7 @@ export default function Skills() {
               <div className="skill-card">
                 <div className="skill-header">
                   <h3>{skill.name}</h3>
-                  <span>{skill.projects} projects</span>
+                  <span>{skill.projects} </span>
                 </div>
 
                 <div className="skill-meta">
@@ -140,10 +143,10 @@ export default function Skills() {
 
       {/* Stats */}
       <div className="skills-stats">
-        <Card><h4>30+</h4><p>Technologies</p></Card>
-        <Card><h4>50+</h4><p>Total Projects</p></Card>
-        <Card><h4>4+</h4><p>Years Experience</p></Card>
-        <Card><h4>8+</h4><p>Certifications</p></Card>
+        <Card><h4>10+</h4><p>Technologies</p></Card>
+        <Card><h4>20+</h4><p>Total Projects</p></Card>
+        <Card><h4>2+</h4><p>Years Experience</p></Card>
+        {/* <Card><h4>8+</h4><p>Certifications</p></Card> */}
       </div>
     </Section>
   );
