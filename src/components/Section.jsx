@@ -4,7 +4,7 @@ export default function Section({ title, children, id }) {
   return (
     <section
       id={id}
-      className="px-6 py-24"
+      className="max-w-6xl mx-auto px-6 py-20"
     >
       {title && (
         <motion.h2
@@ -12,13 +12,7 @@ export default function Section({ title, children, id }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="
-            text-4xl md:text-5xl
-            font-bold text-center
-            mb-12
-            bg-gradient-to-r from-purple-400 to-blue-400
-            bg-clip-text text-transparent
-          "
+          className="text-4xl font-bold text-center mb-12"
         >
           {title}
         </motion.h2>
@@ -28,5 +22,4 @@ export default function Section({ title, children, id }) {
     </section>
   );
 }
-
 

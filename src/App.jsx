@@ -6,10 +6,13 @@ import Hero from "./sections/Hero";
 import Contact from "./sections/Contact";
 import Experience from "./sections/Experience";
 import GlassLayout from "./components/GlassLayout";
+import ScrollBloom from "./components/ScrollBloom";
+
 export default function App() {
   return (
     <main>
-      <GlassLayout/>
+      <ScrollBloom/>
+      <GlassLayout>
       <Navbar/>
       <Hero/>
       <About/>
@@ -17,6 +20,7 @@ export default function App() {
       <Experience/>
       <Projects/>
       <Contact/>
+    </GlassLayout>
     </main>
   );
 }
