@@ -1,0 +1,90 @@
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(168, 85, 247, 0.8),
+    rgba(168, 85, 247, 0.1)
+  );
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+/* Dot */
+.timeline-dot {
+  position: absolute;
+  left: 3px;
+  top: 32px;
+  width: 18px;
+  height: 18px;
+  background: radial-gradient(
+    circle,
+    #a855f7 0%,
+    #7c3aed 60%
+  );
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.7);
+}
+
+/* Content */
+.timeline-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.timeline-content .company {
+  display: block;
+  color: #c084fc;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.timeline-content .date {
+  display: block;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 0.75rem;
+}
+
+/* Bullet points */
+.timeline-content ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.timeline-content li {
+  color: #d1d5db;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+/* Hover polish */
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.15);
+  transition: transform 0.2s ease;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+}

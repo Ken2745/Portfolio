@@ -1,0 +1,62 @@
+/* Contact Section Enhancements */
+
+.contact {
+  position: relative;
+}
+
+/* Headings */
+.contact h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Contact text */
+.contact p {
+  line-height: 1.6;
+}
+
+/* Contact list */
+.contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Links */
+.contact a {
+  text-decoration: none;
+}
+
+/* Input & textarea glow on focus */
+.contact input:focus,
+.contact textarea:focus {
+  box-shadow: 0 0 0 1px rgba(168, 85, 247, 0.6),
+              0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+/* Button polish */
+.contact button {
+  letter-spacing: 0.4px;
+}
+
+/* Subtle hover lift on cards */
+.contact .rounded-2xl {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact .rounded-2xl:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .contact {
+    text-align: center;
+  }
+
+  .contact ul li {
+    justify-content: center;
+  }
+}

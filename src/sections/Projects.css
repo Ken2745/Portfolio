@@ -1,0 +1,64 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Card content */
+.project-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Tech pills */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.tech-pill {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #e9d5ff;
+  background: linear-gradient(
+    135deg,
+    rgba(168, 85, 247, 0.25),
+    rgba(124, 58, 237, 0.25)
+  );
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+/* GitHub link */
+.project-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #c084fc;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.project-link:hover {
+  color: #e9d5ff;
+  transform: translateX(4px);
+}
+
+/* Hover glow */
+.project-card:hover {
+  transition: transform 0.2s ease;
+  transform: translateY(-2px);
+}

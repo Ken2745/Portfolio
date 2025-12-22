@@ -1,0 +1,87 @@
+.about-subtitle {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #9ca3af;
+}
+
+/* Grid layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Card header */
+.about-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* Education card */
+.education-card h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.education-school {
+  color: #60a5fa;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.education-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.gpa-badge {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+/* Resume card */
+.resume-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.resume-info h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.resume-info p {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Download button */
+.resume-download-btn {
+  margin-top: 0.5rem;
+  padding: 0.65rem 1.2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #60a5fa, #a855f7);
+  color: #020617;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.resume-download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(96, 165, 250, 0.35);
+}

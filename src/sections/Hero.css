@@ -1,0 +1,85 @@
+/* Hero Section Base */
+#home {
+  position: relative;
+  background: radial-gradient(
+      circle at top,
+      rgba(168, 85, 247, 0.15),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(10, 10, 15, 1) 0%,
+      rgba(5, 5, 10, 1) 100%
+    );
+  overflow: hidden;
+}
+
+/* Soft animated gradient glow */
+#home::before {
+  content: "";
+  position: absolute;
+  inset: -200px;
+  background: radial-gradient(
+    circle,
+    rgba(168, 85, 247, 0.12),
+    transparent 70%
+  );
+  animation: heroGlow 12s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+/* Subtle noise texture (optional but classy) */
+#home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Name highlight glow */
+#home h1 span {
+  text-shadow:
+    0 0 15px rgba(168, 85, 247, 0.6),
+    0 0 40px rgba(168, 85, 247, 0.25);
+}
+
+/* CTA Buttons polish */
+#home a {
+  backdrop-filter: blur(6px);
+}
+
+#home a:first-child {
+  box-shadow:
+    0 10px 30px rgba(168, 85, 247, 0.35),
+    inset 0 0 0 rgba(255, 255, 255, 0);
+}
+
+#home a:first-child:hover {
+  box-shadow:
+    0 15px 45px rgba(168, 85, 247, 0.45),
+    inset 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Contact button hover refinement */
+#home a:last-child:hover {
+  border-color: rgba(168, 85, 247, 0.6);
+}
+
+/* Glow animation */
+@keyframes heroGlow {
+  from {
+    transform: translateY(-30px) scale(1);
+  }
+  to {
+    transform: translateY(30px) scale(1.05);
+  }
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  #home h1 {
+    line-height: 1.15;
+  }
+}
+
