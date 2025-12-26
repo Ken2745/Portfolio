@@ -8,8 +8,7 @@ export default function About() {
     <Section title="About Me">
       <p className="about-subtitle">
         Passionate Software Engineer with hands-on experience in data science, artificial intelligence, and machine learning.
-        Currently pursuing a Master’s degree in Data Science and Analytics with a concentration in Engineering and Big Data Analytics, 
-         
+        Currently pursuing a Master’s degree in Data Science and Analytics with a concentration in Engineering and Big Data Analytics,
       </p>
 
       <div className="about-grid">
