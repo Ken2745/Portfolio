@@ -12,12 +12,14 @@ const projects = [
       "https://github.com/Ken2745/Real-Time-Air-Quality-Hotspot-Detection-and-Multi-Sensor-Analytics",
   },
   {
-    title: "The Coupon App (Safety & Emergency Response Mobile App)",
-    description:
-      "A safety-focused mobile application designed to assist users during emergencies.",
-    tech: ["Java", "Android SDK", "Retrofit", "TensorFlow Lite", "Porcupine", "Django", "SQLite", "REST APIs", "Docker", "GitLab CI/CD"],
-    github: "https://github.com/Ken2745/the-coupon-app",
+  title: "Heart Disease Prediction System",
+  description:
+    "Machine learning system that predicts heart disease risk using clinical data, featuring a responsive frontend and an AI-powered backend for real-time inference.",
+  tech: ["Python","FastAPI", "Scikit-learn", "XGBoost", "SVM", "KNN", "Pandas", "NumPy"],
+  tech2:["Python", "Scikit-learn", "XGBoost", "SVM", "KNN", "Pandas", "NumPy", "FastAPI", "REST APIs", "HTML", "JavaScript"],
+  github: "https://github.com/Ken2745/heartdisease_prediction",
   },
+
   {
     title: "Strava Performance Analytics",
     description:
@@ -40,11 +42,11 @@ const projects = [
     github: "https://github.com/Ken2745/Diabetes-Detection",
   },
     {
-    title: "Air Quality Prediction",
+    title: "The Coupon App (Safety & Emergency Response Mobile App)",
     description:
-      "This project aims to analyze air pollution trends in urban areas, focusing specifically on New York City, and develop a predictive models to forecast future pollution levels.",
-    tech: ["Python", "Pandas", "NumPy", "scikit-learn", "ARIMA", "Time-Series Forecasting"],
-    github: "https://github.com/Ken2745/-Analyzing-Pollution-and-Air-Quality-Trends",
+      "A safety-focused mobile application designed to assist users during emergencies.",
+    tech: ["Java", "Android SDK", "TensorFlow Lite", "Porcupine", "Django", "SQLite", "REST APIs", "Docker"],
+    github: "https://github.com/Ken2745/the-coupon-app",
   },
 ];
 
