@@ -45,7 +45,6 @@ backend: {
   label: "Backend & APIs",
   skills: [
     { name: "Node.js", level: 85, desc: "JavaScript runtime for scalable backends" },
-    { name: "Express.js", level: 70, desc: "Minimalist REST API framework" },
     { name: "Django", level: 80, desc: "High-level Python web framework" },
     { name: "REST APIs", level: 90, desc: "API design & integration" },
     { name: "GraphQL", level: 70, desc: "Flexible query-based APIs" },
@@ -119,12 +118,12 @@ export default function Skills() {
                   <span>{skill.projects} </span>
                 </div>
 
-                <div className="skill-meta">
+                {/* <div className="skill-meta">
                   <span>Proficiency</span>
                   <span>{skill.level}%</span>
-                </div>
+                </div> */}
 
-                <div className="skill-bar-bg">
+                {/* <div className="skill-bar-bg">
                   <motion.div
                     className="skill-bar-fill"
                     initial={{ width: 0 }}
@@ -132,7 +131,7 @@ export default function Skills() {
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
                   />
-                </div>
+                </div> */}
 
                 <p className="skill-desc">{skill.desc}</p>
               </div>
